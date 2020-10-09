@@ -4,14 +4,16 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CriarTabelaVendasitens extends Migration {
+class CriarTabelaItens extends Migration
+{
     /**
      * Run the migrations.
      *
      * @return void
      */
-    public function up() {
-        Schema::create('vendasitens', function (Blueprint $table) {
+    public function up()
+    {
+        Schema::create('itens', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('vendas_id');
             $table->integer('produtos_id');
@@ -29,7 +31,8 @@ class CriarTabelaVendasitens extends Migration {
      *
      * @return void
      */
-    public function down() {
-        Schema::drop ('vendasitens');
+    public function down()
+    {
+        Schema::drop ('itens');
     }
 }

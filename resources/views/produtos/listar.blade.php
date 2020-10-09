@@ -12,17 +12,17 @@
             });
         </script>
     @endif
-    <div class="justify-content-center align-items-center row">
+    <div class="justify-content-center align-items-center row mt-2">
         <table class="table table-sm table-striped table-bordered col-md-8">
             <thead class="thead-light">
                 <tr>
                     <th>Código</th>
                     <th>Descrição</th>
-               1     <th>UN</th>
+                    <th>UN</th>
                     <th >Preço</th>
                     <th >
                         <a href="{{ route('adicionar_produtos') }}" class="btn btn-primary"><i class="fa fa-plus"></i>&nbspNovo</a>
-                        <a href="{{ route('main') }}" class="btn btn-secondary"><i class="fa fa-undo"></i>&nbsp Voltar</a>
+                        <a href="{{ route('listar_vendas') }}" class="btn btn-secondary"><i class="fa fa-undo"></i>&nbsp Voltar</a>
                     </th>
                 </tr>
             </thead>

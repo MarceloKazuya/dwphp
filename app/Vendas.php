@@ -8,7 +8,7 @@ class Vendas extends Model {
     protected $fillable = ['subtotal','desconto','total'];
     public $timestamps = false;
 
-    public function vendasItens(){
-        return $this->hasMany(VendasItens::class);
+    public function itens(){
+        return $this->hasMany(Itens::class);
     }
 }

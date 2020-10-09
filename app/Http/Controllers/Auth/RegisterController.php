@@ -19,6 +19,6 @@ class RegisterController extends Controller {
         $data['password'] = Hash::make($data['password']);
         $user = User::create($data);
         Auth::login($user);
-        return redirect()->route('main');
+        return redirect()->route('listar_vendas');
     }
 }
