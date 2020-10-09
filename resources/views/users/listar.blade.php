@@ -12,7 +12,7 @@
             });
         </script>
     @endif
-    <div class="justify-content-center align-items-center row">
+    <div class="justify-content-center align-items-center row mt-2">
         <table class="table table-sm table-striped table-bordered col-md-4">
             <thead class="thead-light">
             <tr>
@@ -20,7 +20,7 @@
                 <th class="col-md-auto">Nome</th>
                 <th>
                     <a href="{{ route('adicionar_users') }}" class="btn btn-primary"><i class="fa fa-plus"></i>&nbspNovo</a>
-                    <a href="{{ route('main') }}" class="btn btn-secondary"><i class="fa fa-undo"></i>&nbsp Voltar</a>
+                    <a href="{{ route('listar_vendas') }}" class="btn btn-secondary"><i class="fa fa-undo"></i>&nbsp Voltar</a>
                 </th>
             </tr>
             </thead>
